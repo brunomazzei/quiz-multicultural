@@ -1,0 +1,44 @@
+/* Estilos personalizados e fonte customizada extraídos do index.html */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.timer-warning {
+    color: #ef4444;
+    transform: scale(1.2);
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.8;
+    }
+}
+.lang-btn {
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+.lang-btn.selected {
+    opacity: 1;
+    transform: scale(1.1);
+    border-color: #22d3ee;
+}
+.lang-btn img {
+    height: 2rem;
+    width: auto;
+    border-radius: 50%;
+}
